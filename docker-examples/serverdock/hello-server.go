@@ -14,21 +14,26 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func htmlHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, `<h1>Whoa, Go is neat!</h1>
-	<p>Go is fast!</p>
-	<p>... and simple!</p>
-	<p>You %s even add %s</p>
-	<a href="http://github.com/abspen1"target="_blank">ME</a>
-	`, "can", "<strong>variables</strong>")
-	// fmt.Fprintf(w, "<h1>Whoa, Go is neat!</h1>")
-	// fmt.Fprintf(w, "<p>Go is fast!</p>")
-	// fmt.Fprintf(w, "<p>... and simple!</p>")
-	// fmt.Fprintf(w, "<p>You %s even add %s</p>", "can", "<strong>variables</strong>")
+	// fmt.Fprintf(w, `<h1>Austin Spencer's Links</h1>
+	// <a href="twitter.com/austinnspencer"target="_blank">Twitter</a>
+	// <a href="https://www.instagram.com/austinspencer/?hl=en"target="_blank">Instagram</a>
+	// <a href="https://www.linkedin.com/in/austin-spencer-b56a25177/"target="_blank">LinkedIn</a>
+	// <a href="http://github.com/abspen1"target="_blank">Github</a>`)
+	fmt.Fprintf(w, `<h1>Austin Spencer's Links</h1>`)
+	fmt.Fprintf(w, "<p></p>")
+	fmt.Fprintf(w, `<a href="http:twitter.com/austinnspencer"target="_blank">Twitter</a>`)
+	fmt.Fprintf(w, "<p></p>")
+	fmt.Fprintf(w, `<a href="http://www.instagram.com/austinspencer/?hl=en"target="_blank">Instagram</a>`)
+	fmt.Fprintf(w, "<p></p>")
+	fmt.Fprintf(w, `<a href="https://www.linkedin.com/in/austin-spencer-b56a25177/"target="_blank">LinkedIn</a>`)
+	fmt.Fprintf(w, "<p></p>")
+	fmt.Fprintf(w, `<a href="http://github.com/abspen1"target="_blank">Github</a>`)
 }
 
 func main() {
+	fmt.Println("Starting Server")
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/about/", aboutHandler) // 127.0.0.1:8000/about
-	http.HandleFunc("/html/", htmlHandler)   // Adds html tags
+	http.HandleFunc("/links/", htmlHandler)  // Adds html tags
 	http.ListenAndServe(":8080", nil)        // Run to local server http://127.0.0.1:8000
 }
