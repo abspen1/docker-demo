@@ -10,7 +10,7 @@ Simple golang app that we can run 24/7 in Docker.
 
 ## Building with Docker
 * Create your docker file in same directory as your Go webapp
-* docker build --no-cached -t serverdock/webapp .
+* docker build --no-cache -t serverdock/webapp .
     * Don't forget the (.) && webapp is the container name && --no-cached is optional
 * Now your image is created
 
