@@ -9,4 +9,8 @@ This is the easiest langauge (for me) to create dockerfiles for. Possibly since 
 ## Run Docker Image
 * $ docker run py
 
+## My Implementations
+* [twitter-bot](https://github.com/abspen1/twitter-bot)
+* [fantasy-twitter](https://github.com/abspen1/Fantasy-Twitter)
+
 ![Alt text](https://i.morioh.com/9ccb7b143f.png "Docker With Python")
