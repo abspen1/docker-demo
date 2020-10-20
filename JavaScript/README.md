@@ -17,7 +17,7 @@ This is a basic generalized implementation of using Docker with an application b
 * $ docker run javascript-image
 
 ## My Implementation
-* [Call of Duty API](https://github.com/abspen1/modern-warfare)
+* [modern-warfare](https://github.com/abspen1/modern-warfare)
 
 
 ![Alt Text](https://miro.medium.com/max/1000/1*_f186TrKOUrpvoYSQMSP6A.jpeg "JavaScript with Docker")
